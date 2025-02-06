@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script type="text/javascript">
+        function calculate() {
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = parseFloat(num1) * parseFloat(num2);
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</head>
+<body>
+    <h1>calculator</h1>
+    <input id="num1" type="text"> * <input id="num2" type="text">
+    <button onclick="calculate()">=</button>
+    <span id="result"></span>
+</body>
+</html>
