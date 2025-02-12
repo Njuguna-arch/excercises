@@ -3,56 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Njugunas</title>
+    <title>Student Grades Search</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: chartreuse;">
-    <h1>Njugunas</h1>
-    <h2>GRACE NJOKI </h2>
-    <table style="border-color: rgb(211, 13, 13);">
-        <tr style="margin: auto;">
-            <th>Name</th>
-            <th>  Amount</th>
-        </tr>
-        
-        <tr>
-            <td>Joseph Njuguna</td>
-            <td>20,000</td>
-        </tr>
-            <tr>
-                <td>David Ndirangu</td>
-                <td>15,000</td>
-    
-            </tr>
-    </table>
-    <br>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Amount</th>
-            <th>Fine</th>
-        </tr>
-        <tr>
-            <td colspan="3">The names are:</td>
-        </tr>
-        <tr>
-            <td>Francis Mwangi</td>
-            <td>12,000</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>John Chege</td>
-            <td>12,000</td>
-            <td>10</td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <br>
-    <address style="color: darkred;">Josepj@gmail.com
-        <br>
-        kambaa <br>
-        Githunguri
-    </address>
-    &lt;&lt;&lt;&copy;Joseph&gt;&gt;&gt;
+<body>
+        <h1>Search Student Grades</h1>
+    <form action="search.php" method="POST">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name" required><br><br>
+            <label for="admission_number">Admission Number:</label>
+            <input type="text" id="admission_number" name="admission_number" required><br><br>
+            <input type="submit" value="Search">
+    </form>
 </body>
 </html>
